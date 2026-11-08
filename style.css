@@ -1,0 +1,34 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-size: 30pt;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+p {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+/* 탐색 / 탈출 링크 버튼 스타일 */
+a {
+  color: #00ffcc; /* 사이버틱한 네온 칼라 */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15pt;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border: 1px solid #00ffcc;
+  transition: all 0.3s ease;
+}
