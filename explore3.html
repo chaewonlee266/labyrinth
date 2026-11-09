@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Explore 1</title>
+  <link rel="stylesheet" href="exploreStyle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+</head>
+<body>
+  <div id="exploreCanvas"></div>
+
+  <div class="text-box">
+    <h2>Are you sure?</h2>
+    <div class="btn-group">
+      <button class="btn" onclick="clickYes()">YES</button>
+      <button class="btn" onclick="clickNo()">NO</button>
+    </div>
+  </div>
+
+  <script src="explore.js"></script>
+  <script>
+    function clickYes() { window.location.href = "explore1.html"; }
+    function clickNo() { window.location.href = "index.html"; }
+  </script>
+</body>
+</html>

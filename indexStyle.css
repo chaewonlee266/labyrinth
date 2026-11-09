@@ -1,13 +1,13 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace; 
+  font-family: monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
+  margin-bottom: 30px
   text-align: center;
 }
 h1 {
@@ -18,17 +18,24 @@ h1 {
 
 p {
   color: #888;
-  margin-bottom: 30px;
+  font-size: 15pt;
+  margin-bottom: 50px;
 }
 
-/* 탐색 / 탈출 링크 버튼 스타일 */
+.indexChoice {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 100px;                      
+  width: 300px;                   
+}
+
 a {
-  color: #00ffcc; /* 사이버틱한 네온 칼라 */
+  color: #00ffcc; 
   text-decoration: none;
   font-weight: bold;
   font-size: 15pt;
-  margin: 0 15px;
-  padding: 10px 20px;
+  padding: 10px 10px;                
   border: 1px solid #00ffcc;
-  transition: all 0.3s ease;
+
+  text-align: center;             
 }

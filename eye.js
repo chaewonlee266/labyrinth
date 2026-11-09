@@ -1,22 +1,24 @@
 function setup() {
-  createCanvas(600, 400);
-
+  let canvas = createCanvas(300, 200); 
+  canvas.parent('eyeCanvas'); 
 }
 
 function draw() {
+  background(0);
+  
+  let eyeX = map(mouseX, 0, width, 120, 180);
+  let eyeY = map(mouseY, 0, height, 90, 110);
 
-background(0);
-let eyeX = map(mouseX, 0, width, 150, 330);
-  let eyeY = map(mouseY, 0, height, 170, 200);
-  eyeX = constrain(eyeX, 200, 400); 
-  eyeY = constrain(eyeY, 150, 250);
+  eyeX = constrain(eyeX, 110, 190); 
+  eyeY = constrain(eyeY, 80, 120);
   
   noStroke();
   fill(255);
-  ellipse(300,200,600,400);
-  fill(100,170,205);
-  circle(eyeX,eyeY,230);
-  fill(0);
-  circle(eyeX,eyeY,130);
+  ellipse(150, 100, 300, 200);
   
+  fill(0, 255, 204);
+  circle(eyeX, eyeY, 115);
+  
+  fill(0);
+  circle(eyeX, eyeY, 65);
 }
