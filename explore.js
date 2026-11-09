@@ -18,7 +18,7 @@ class RandomEye {
     fill(255);
     ellipse(0, 0, 120, 80);
 
-    fill(0, 255, 204);
+    fill(0,255,210);
     circle(eyeX, eyeY, 45);
 
     fill(0);
@@ -37,8 +37,9 @@ let showFact = false;
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('exploreCanvas');
 
-let numEyes = floor(random(3, 6)); 
+let numEyes = floor(random(3, 7)); 
 
   for (let i = 0; i < numEyes; i++) {
     let x = random(80, width - 80);
